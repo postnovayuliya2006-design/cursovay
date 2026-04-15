@@ -45,7 +45,7 @@ class CandidateController {
             }
         }
 
-        require __DIR__ . '/../../templates/main_page.php';
+        require_once __DIR__ . '/../../templates/main_page.php';
     }
 
     public function form() {
@@ -57,7 +57,7 @@ class CandidateController {
             $candidate = $model->getById($_GET['id']);
         }
 
-        require __DIR__ . '/../../templates/candidate_form.php';
+        require_once __DIR__ . '/../../templates/candidate_form.php';
     }
 
     public function save() {
@@ -112,6 +112,6 @@ class CandidateController {
     }
 
     public function admin() {
-        require __DIR__ . '/../../templates/admin_panel.php';
+        require_once __DIR__ . '/../../templates/admin_panel.php';
     }
 }
