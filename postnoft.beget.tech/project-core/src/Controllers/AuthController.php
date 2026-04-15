@@ -27,7 +27,7 @@ class AuthController {
             }
         }
 
-        require_once __DIR__ . '/../../templates/login.php';
+        require __DIR__ . '/../../templates/login.php';
     }
 
     public function register() {
@@ -51,7 +51,7 @@ class AuthController {
             }
         }
 
-        require_once __DIR__ . '/../../templates/register.php';
+        require __DIR__ . '/../../templates/register.php';
     }
 
     public function logout() {
