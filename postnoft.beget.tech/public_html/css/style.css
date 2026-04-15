@@ -1,0 +1,68 @@
+/* BASE */
+body {
+    background-color: #f8f9fa;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* CARD */
+.candidate-card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    transition: 0.2s;
+}
+
+.candidate-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.candidate-card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* DESCRIPTION */
+.description-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.description-text.expanded {
+    display: block;
+}
+
+/* BUTTON */
+.toggle-btn {
+    font-size: 0.85rem;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+/* ADMIN */
+.admin-link {
+    color: #ffc107 !important;
+    font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .candidate-card img {
+        height: 200px;
+    }
+}
