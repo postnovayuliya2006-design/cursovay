@@ -57,7 +57,7 @@ class ApplicationController {
 
         $applications = $stmt->fetchAll();
 
-        require __DIR__ . '/../../templates/admin_applications.php';
+        require_once __DIR__ . '/../../templates/admin_applications.php';
     }
 
     public function updateStatus() {
